@@ -28,5 +28,3 @@ while True:
     x += 0.1
     Display_Surface.blit(surf, (x,150))
     pygame.display.update()
-
-pygame.quit()
