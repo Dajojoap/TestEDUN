@@ -19,9 +19,12 @@ pygame.display.set_icon(Icono)
 while True:
     #loop de evento
     for event in pygame.event.get():
-        if event.type == pygame.quit:
-            #dibuja el juego
-            Display_Surface.fill((4,17,4)) #esto define el color de fondo de la pantalla
-            x += 0.1
-            Display_Surface.blit(surf, (x,150))
-            pygame.display.update()
+        if event.type == pygame.QUIT:
+            corriendo= False
+    
+    
+    #dibuja el juego
+    Display_Surface.fill((4,17,4)) #esto define el color de fondo de la pantalla
+    x += 0.1
+    Display_Surface.blit(surf, (x,150))
+    pygame.display.update()
